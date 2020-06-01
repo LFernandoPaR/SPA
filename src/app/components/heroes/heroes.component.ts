@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import listadeheroes from 'src/assets/data/data.json';
 
 @Component({
   selector: 'app-heroes',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroesComponent implements OnInit {
 
+  heroes: any[] = [];
+
   constructor() { }
 
   ngOnInit() {
+    this.cargarHeroes();
   }
 
+  private cargarHeroes() {
+    this.heroes = listadeheroes;
+  }
 }
