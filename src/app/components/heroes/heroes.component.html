@@ -5,7 +5,7 @@
         <h5 class="card-title text-center">{{heroe.nombre}}</h5>
         <p class="card-text">{{heroe.bio}}</p>
         <p class="card-text text-center"><small>{{heroe.aparicion}} ({{heroe.casa}})</small></p>
-        <button type="button" class="btn btn-primary btn-lg btn-block">Mostrar mas</button>
+        <button type="button" (click)="mostrarHeroe(heroe)" class="btn btn-primary btn-lg btn-block">Mostrar mas</button>
       </div>
     </div>
   </div>

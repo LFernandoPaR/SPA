@@ -7,6 +7,8 @@ import { HomeComponent } from './components/home/home.component';
 import { APP_ROUTING } from './app.routes';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { AboutComponent } from './components/about/about.component';
+import { HeroeModalComponent } from './components/heroe-modal/heroe-modal.component';
+import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -14,13 +16,16 @@ import { AboutComponent } from './components/about/about.component';
     NavBarComponent,
     HomeComponent,
     HeroesComponent,
-    AboutComponent
+    AboutComponent,
+    HeroeModalComponent
   ],
   imports: [
     BrowserModule,
+    NgbModule,
     APP_ROUTING
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [HeroeModalComponent]
 })
 export class AppModule { }
