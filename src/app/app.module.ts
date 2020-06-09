@@ -9,6 +9,7 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeroeModalComponent } from './components/heroe-modal/heroe-modal.component';
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { RecortarPipe } from './pipes/recortar.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     HeroesComponent,
     AboutComponent,
-    HeroeModalComponent
+    HeroeModalComponent,
+    RecortarPipe
   ],
   imports: [
     BrowserModule,
